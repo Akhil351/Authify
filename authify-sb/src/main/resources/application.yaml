@@ -1,0 +1,45 @@
+server:
+  port: 3510
+  servlet:
+    context-path: /api/v1.0
+
+jwt:
+  secret:
+    key: qwertyuiopasdfghjklzxcvbnmmnbvcxzlkjhgfdsapoiuytrewq
+spring:
+  application:
+    name: auth-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authify
+    username: postgres
+    password: Eshwar@351
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  mail:
+    host: your host
+    port: 587
+    username: your user name
+    password: you password
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          from: from email
+
+
+
+
+
+
+
